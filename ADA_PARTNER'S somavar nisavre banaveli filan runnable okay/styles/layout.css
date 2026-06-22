@@ -1,0 +1,21 @@
+/* ── Layout ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg-primary:#0f1117;--bg-secondary:#1a1d27;--bg-card:#1e2235;--bg-glass:rgba(30,34,53,0.85);
+  --text-primary:#e8eaf6;--text-secondary:#9096b0;--text-muted:#5c6280;
+  --accent:#3b82f6;--accent2:#8b5cf6;--success:#10b981;--danger:#ef4444;--warning:#f59e0b;
+  --border:rgba(255,255,255,0.08);--border-accent:rgba(59,130,246,0.4);
+  --shadow:0 4px 24px rgba(0,0,0,0.4);--shadow-glow:0 0 20px rgba(59,130,246,0.25);
+  --radius:12px;--radius-sm:8px;--radius-lg:20px;
+  --transition:0.25s cubic-bezier(0.4,0,0.2,1);
+  --navbar-h:56px;--sidebar-w:280px;
+}
+body.theme-light{
+  --bg-primary:#f0f4ff;--bg-secondary:#ffffff;--bg-card:#ffffff;--bg-glass:rgba(255,255,255,0.9);
+  --text-primary:#1a1d27;--text-secondary:#4a4f6a;--text-muted:#8a90a8;
+  --border:rgba(0,0,0,0.1);--shadow:0 4px 24px rgba(0,0,0,0.1);
+}
+body{font-family:'Inter','Segoe UI',system-ui,sans-serif;background:var(--bg-primary);color:var(--text-primary);min-height:100vh;overflow-x:hidden}
+#v2-navbar{position:fixed;top:0;left:0;right:0;height:var(--navbar-h);background:var(--bg-glass);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 16px;z-index:900;gap:12px}
+.main-layout{display:flex;padding-top:var(--navbar-h)}
+.content-area{flex:1;min-width:0;overflow-x:hidden}

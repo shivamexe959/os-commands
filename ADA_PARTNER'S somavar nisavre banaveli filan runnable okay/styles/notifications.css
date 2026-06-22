@@ -1,0 +1,12 @@
+/* ── Notification panel ── */
+.notif-list{display:flex;flex-direction:column;gap:8px;max-height:400px;overflow-y:auto}
+.notif-item{display:flex;gap:12px;align-items:flex-start;padding:12px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);transition:all var(--transition);animation:fadeIn .2s ease}
+.notif-item.unread{border-left:3px solid var(--accent);background:rgba(59,130,246,0.05)}
+.notif-icon{font-size:1.2rem;flex-shrink:0;margin-top:2px}
+.notif-content{flex:1;min-width:0}
+.notif-title{font-size:.88rem;font-weight:600;margin-bottom:2px}
+.notif-body{font-size:.82rem;color:var(--text-secondary);margin-bottom:4px}
+.notif-time{font-size:.72rem;color:var(--text-muted)}
+.notif-actions{display:flex;gap:4px;flex-shrink:0}
+.notif-actions button{background:none;border:1px solid var(--border);border-radius:6px;color:var(--text-muted);cursor:pointer;font-size:.8rem;padding:4px 8px;transition:all var(--transition)}
+.notif-actions button:hover{background:rgba(255,255,255,0.08);color:var(--text-primary)}

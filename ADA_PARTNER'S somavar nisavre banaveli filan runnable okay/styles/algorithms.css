@@ -1,0 +1,5 @@
+/* Algorithm tool panels — base styles in main.css */
+/* v2 additions: bookmark button on each algorithm panel */
+.algo-bookmark-btn{background:none;border:1px solid var(--border);border-radius:6px;padding:4px 10px;cursor:pointer;font-size:.82rem;color:var(--text-muted);transition:all var(--transition);margin-left:8px}
+.algo-bookmark-btn.bookmarked{border-color:rgba(245,158,11,0.4);color:#f59e0b;background:rgba(245,158,11,0.08)}
+.algo-bookmark-btn:hover{border-color:var(--accent);color:var(--text-primary)}

@@ -1,0 +1,4 @@
+/* Firebase Auth overlay — preserves existing login UI styling */
+/* All original login styles are in main.css (styles.css from v1) */
+/* v2 additions */
+#v2-navbar .navbar-login-btn{animation:fadeIn .4s ease}
